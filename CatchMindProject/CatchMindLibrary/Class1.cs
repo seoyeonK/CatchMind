@@ -59,7 +59,7 @@ namespace CatchMindLibrary
         [Serializable]
         public class Chat_data : Packet//채팅 데이터 패킷
         {
-            public string nicname;
+            public string nickname;
             public string data;
         }
 

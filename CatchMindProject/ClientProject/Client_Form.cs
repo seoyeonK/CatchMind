@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CatchMindProject
+namespace ClientProject
 {
     public partial class Client_Form : Form
     {

@@ -51,7 +51,7 @@ namespace ServerProject
         }
 
 
-        void getAnswer()//플레이어들이 보낸 답 수신
+        void getAnswer()//새로운 정답 불러오기
         {
 
         }

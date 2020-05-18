@@ -11,6 +11,14 @@ using System.Runtime.Serialization.Formatters.Binary;//Packet용
 
 namespace CatchMindLibrary
 {
+    public enum PacketType //패킷타입 구별. receive함수에서 int로 변환해서 사용
+    {
+        채팅=0,
+        그림,
+        나가기,
+        들어오기
+    }
+
     public class Client_Info
     {
         string nickname;//사용자 이름
@@ -55,36 +63,34 @@ namespace CatchMindLibrary
             ms.Close();
             return obj;
         }
+    }
 
-        [Serializable]
-        public class Chat_data : Packet//채팅 데이터 패킷
+    [Serializable]
+    public class Chat_data : Packet//채팅 데이터 패킷
         {
-            public string nickname;
-            public string data;
-        }
+        public string nickname;
+        public string data;
+    }
 
-        [Serializable]
-        public class Draw_data : Packet//그림 데이터 패킷
-        {
-
-           
-        }
-
-        [Serializable]
-        public class Exit_data : Packet//게임 떠날 때 보낼 데이터 패킷
-        {
-
-
-        }
-
-        [Serializable]
-        public class Join_Data : Packet//게임 참가할 때 보낼 데이터 패킷
-        {
-
-
-        }
-
+    [Serializable]
+    public class Draw_data : Packet//그림 데이터 패킷
+    {
 
 
     }
+
+    [Serializable]
+    public class Exit_data : Packet//게임 떠날 때 보낼 데이터 패킷
+    {
+
+
+    }
+
+    [Serializable]
+    public class Join_Data : Packet//게임 참가할 때 보낼 데이터 패킷
+    {
+
+
+    }
+
 }

@@ -21,12 +21,12 @@ namespace CatchMindLibrary
 
     public class Client_Info
     {
-        string nickname;//사용자 이름
-        string pwd;//사용자 비밀번호
-        int img_num;//사용자 프로필 이미지 번호
-        bool drawable;//그리기 권한 여부
-        int score;//맞춘 개수 점수
-        TcpClient hclient;//선영 주석달아주세용
+        public string nickname;//사용자 이름
+        public string pwd;//사용자 비밀번호
+        public int img_num;//사용자 프로필 이미지 번호
+        public bool drawable;//그리기 권한 여부
+        public int score;//맞춘 개수 점수
+        public TcpClient client;//client 누군지 구분
     }
     
     [Serializable]
